@@ -67,18 +67,18 @@
                 <div class="row">
                     <div class="col-xl-1 col-lg-3 col-md-3 col-sm-3 col logo_section">
                         <div class="full">
-                            <div class="center-desk">
+                            {{-- <div class="center-desk">
                                 <div class="logo">
                                     <img src="images/unnamed.jpg" />
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
 
                     <div class="col-xl-11 col-lg-9 col-md-9 col-sm-9">
                         <ul class="btn">
                             <li class="down_btn"><a href="/login">Login</a></li>
-                            <li><a href="/register">Sign Up</a></li>
+                            <li><a href="/register">Register</a></li>
                             <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
                             <li><button type="button" id="sidebarCollapse">
                                     <img src="images/menu_icon.png" alt="#" />
