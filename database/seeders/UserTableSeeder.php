@@ -28,9 +28,9 @@ class UserTableSeeder extends Seeder
 
         DB::table('users')->insert([
             'role_id' => 2,
-            'name' => 'Ilham',
-            'email' => 'ilham@gmail.com',
-            'password' => bcrypt('ilham'),
+            'name' => 'siswa',
+            'email' => 'siswa@gmail.com',
+            'password' => bcrypt('siswa'),
             'remember_token' => Str::random(20),
             'status' => 'inactive'
         ]);
