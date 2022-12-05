@@ -20,17 +20,17 @@ class UserTableSeeder extends Seeder
         DB::table('users')->insert([
             'role_id' => 1,
             'name' => 'Admin',
-            'email' => 'adminppdb@gmail.com', 
-            'password' => bcrypt('ilhamskurt'),
+            'email' => 'admin@ppdb.com',
+            'password' => bcrypt('admin'),
             'remember_token' => Str::random(20),
             'status' => 'active'
         ]);
 
         DB::table('users')->insert([
             'role_id' => 2,
-            'name' => 'siswa',
-            'email' => 'siswa@gmail.com',
-            'password' => bcrypt('siswa'),
+            'name' => 'jojo',
+            'email' => 'jojo@gmail.com',
+            'password' => bcrypt('jojo'),
             'remember_token' => Str::random(20),
             'status' => 'inactive'
         ]);

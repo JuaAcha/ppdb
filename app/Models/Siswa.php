@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Jurusan;
+use App\Models\Kelas;
 
 class Siswa extends Model
 {
@@ -17,4 +18,9 @@ class Siswa extends Model
     public function Jurusan(){
         return $this->belongsTo(Jurusan::class);
     }
+
+    public function Kelas(){
+        return $this->belongsTo(Kelas::class);
+    }
+    
 }

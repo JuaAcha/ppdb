@@ -61,6 +61,7 @@
     <script>
         // Data Tables
         let table;
+
         $(function() {
             table = $('.table').DataTable({
                 proccesing: true,
@@ -106,11 +107,15 @@
 
         function addForm(url){
             $('#modalForm').modal('show');
-            $('#modalForm .modal-title').text('Tambah Data Jurusan');           
+            $('#modalForm .modal-title').text('Tambah Data Jurusan');
             $('#modalForm form')[0].reset();
-            
+
             $('#modalForm form').attr('action', url);
             $('#modalForm [name=_method]').val('post');
+        }
+
+        function pdf(url){
+        $('.form-siswa').attr('action', url).attr('target', '_blank').submit();
         }
 
         function editData(url){
