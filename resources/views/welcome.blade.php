@@ -2,477 +2,464 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>potoub</title>
+    <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-
-    <title>SMK Parakacuk</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="{{asset ('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="{{asset ('assets/css/fontawesome.css')}}">
-    <link rel="stylesheet" href="{{asset ('assets/css/templatemo-space-dynamic.css')}}">
-    <link rel="stylesheet" href="{{asset ('assets/css/animated.css')}}">
-    <link rel="stylesheet" href="{{asset ('assets/css/owl.css')}}">
-
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{{asset ('assetz/css/bootstrap.min.css')}}">
     <!-- style css -->
+    <link rel="stylesheet" href="{{asset ('assetz/css/style.css')}}">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="{{asset ('assetz/css/responsive.css')}}">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="{{asset ('assetz/css/jquery.mCustomScrollbar.min.css')}}">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
+<!-- body -->
 
-<body>
+<body class="main-layout">
+    <!-- loader  -->
+    <!-- <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div> -->
+    <!-- end loader -->
+    <div class="wrapper">
+        <!-- end loader -->
+        <div class="sidebar">
 
-    <!-- ***** Preloader Start ***** -->
-    <div id="js-preloader" class="js-preloader">
-        <div class="preloader-inner">
-            <span class="dot"></span>
-            <div class="dots">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+    <div id="dismiss">
+        <i class="fa fa-arrow-left"></i>
     </div>
-    <!-- ***** Preloader End ***** -->
+    <ul class="list-unstyled components">
+        <li class="active"> <a href="#">Home</a> </li>
+        <li><a href="#about">About </a> </li>
+        <li><a href="#work">Work</a> </li>
+    </ul>
+</nav>
+</div>
+            <!-- akhir sidebar -->
 
+            <!-- Navbar -->
+            <div id="content">
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-1 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                            {{-- <div class="center-desk">
+                                <div class="logo">
+                                    <img src="images/unnamed.jpg" />
+                                </div>
+                            </div> --}}
+                        </div>
+                    </div>
 
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="/" class="logo">
-                            <h4>SMK<span>Parakacuk</span></h4>
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="#about">About Us</a></li>
-                            <li class="scroll-to-section"><a href="#services">Services</a></li>
-                            <li class="scroll-to-section"><a href="#portfolio">Department</a></li>
-                            <li class="scroll-to-section"><a href="#contact">Message Us</a></li>
-
-                            <li class="scroll-to-section">
-                                <div class="main-red-button"><a href="/login">Login Now</a></div>
+                    <div class="col-xl-11 col-lg-9 col-md-9 col-sm-9">
+                        <ul class="btn">
+                            <li class="down_btn"><a href="/login">Login</a></li>
+                            <li><a href="/register">Register</a></li>
+                            <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                            <li><button type="button" id="sidebarCollapse">
+                                    <img src="images/menu_icon.png" alt="#" />
+                                </button>
                             </li>
                         </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
+                    </div>
 
-                    </nav>
                 </div>
             </div>
         </div>
     </header>
-    <!-- ***** Header Area End ***** -->
+    <!-- end header inner -->
+    <!-- end header -->
+            <!-- akhir navbar -->
 
-    <!-- Bagian Halaman 1 -->
-    <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="row">
-                        <div class="col-lg-6 align-self-center">
-                            <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s"
-                                data-wow-delay="1s">
-                                <h6>Welcome to SMK Parakacuk</h6>
-                                <h2>We Make <em>History</em> &amp; <span>Never</span> Surrender</h2>
-                                <p>SMK Parakacuk is a professional school, This School Only For Good Looking.<br>
-                                   Bagaimana Cara Mendaftar Disini <a rel="nofollow"
-                                        href="https://www.youtube.com/watch?v=TcWgjXcJVVc" target="_parent">Lihat Tutor Disini </a>.</p>
-                                <!-- <form id="search" action="#" method="GET">
-                                    <fieldset>
-                                        <input type="address" name="address" class="email"
-                                            placeholder="Your website URL..." autocomplete="on" required>
-                                    </fieldset>
-                                    <fieldset>
-                                        <button type="submit" class="main-button">Analyze Site</button>
-                                    </fieldset>
-                                </form> -->
+            <!-- banner -->
+            <div id="myCarousel" class="carousel slide banner_main" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container-fluid">
+                            <div class="carousel-caption">
+                                <div class="row">
+                                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                                        <div class="text-bg">
+                                            <h1>SMK<br> Antartika 1 <br>Sidoarjo</h1>
+                                            <p>Aplikasi Web Penerimaan Peserta Didik Baru Tahun Pelajaran 2023 / 2024 SMK ANTARTIKA 1 SIDOARJO </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                                        <div class="images_box">
+                                            <figure><img src="images/img2.png"></figure>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                                <img src="{{asset ('assets/images/Gurlgang.jpeg')}}" class="shadow-dark rounded" alt="team meeting">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid ">
+                            <div class="carousel-caption">
+                                <div class="row">
+                                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                                        <div class="text-bg">
+                                            <h1>SMK<br> Antartika 1 <br>Sidoarjo</h1>
+                                            <p>Aplikasi Web Penerimaan Peserta Didik Baru Tahun Pelajaran 2023 / 2024 SMK ANTARTIKA 1 SIDOARJO </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                                        <div class="images_box">
+                                            <figure><img src="images/img2.png"></figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-fluid">
+                            <div class="carousel-caption ">
+                                <div class="row">
+                                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                                        <div class="text-bg">
+                                            <h1>SMK<br> Antartika 1 <br>Sidoarjo</h1>
+                                            <p>Aplikasi Web Penerimaan Peserta Didik Baru Tahun Pelajaran 2023 / 2024 SMK ANTARTIKA 1 SIDOARJO </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                                        <div class="images_box">
+                                            <figure><img src="images/img2.png"></figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+            <!-- end banner -->
+
+            <!-- about -->
+            <div id="about" class="about">
+                <div class="container-fluid">
+                    <div class="row d_flex">
+                        <div class="col-md-5">
+                            <div class="about_img">
+                                <figure><img src="images/depan.jpg" alt="#" /></figure>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="titlepage">
+                                <h2>Informasi <span class="blu">Sekolah</span></h2>
+                                <p>SMK Antartika 1 Sidoarjo adalah sekolah SMK di sidoarjo dengan menjamin mutu industri di dalamnya. Dengan mengusung Moto "Pilih Sekolah yang Berkualitas Bukan Janji Tapi Bukti".</p>   
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Selesai Halaman 1 -->
+            <!-- end about -->
 
-    <!-- Bagian Halaman 2 -->
-    <div id="about" class="about-us section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="left-image wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <img src="assets/images/about-left-image.png" alt="person graphic">
+            <!-- choose  section -->
+            <!-- <div class="choose ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="titlepage">
+                                <h2>Why <span class="blu"> Choose Us</span></h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-8 align-self-center">
-                    <div class="services">
+                <div class="choose_bg">
+                    <div class="container">
                         <div class="row">
-                            <div class="col-lg-6">
-                                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-                                    <div class="icon">
-                                        <img src="assets/images/service-icon-01.png" alt="reporting">
-                                    </div>
-                                    <div class="right-text">
-                                        <h4>Kecantikan</h4>
-                                        <p>Program kompetensi yang mempelajari tentang menjadi good Looking</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
-                                    <div class="icon">
-                                        <img src="assets/images/service-icon-02.png" alt="">
-                                    </div>
-                                    <div class="right-text">
-                                        <h4>Tata Boga</h4>
-                                        <p>Program kompetensi yang mempelajari tentang dunia permasakan</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
-                                    <div class="icon">
-                                        <img src="assets/images/service-icon-03.png" alt="">
-                                    </div>
-                                    <div class="right-text">
-                                        <h4>Roblox</h4>
-                                        <p>Program kompetensi yang mempelajari tentang dunia roblox</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="1.1s">
-                                    <div class="icon">
-                                        <img src="assets/images/service-icon-04.png" alt="">
-                                    </div>
-                                    <div class="right-text">
-                                        <h4>Baku Hantam</h4>
-                                        <p>Program kompetensi yang mempelajari pukul-memukul</p>
+                            <div class="col-md-12">
+                                <div class="row">
+                                   
+                                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 padding_left0">
+                                        <div class="choose_box">
+                                            <i><img src="images/admin.png" alt="#" /></i>
+                                            <h3> Ad Minim</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                                mollit anim id est laborum."</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- Selesai Halaman 2 -->
+            </div> -->
+            <!-- end choose  section -->
+            <!-- work -->
+            <div id="work" class="work">
+                <div class="container-fluid">
+                    <div class="row d_flex">
+                        <div class="col-md-7">
+                            <div class="titlepage">
+                                <h2>Visi <span class="blu">Misi</span></h2>
+                                <p>Visi : Terwujudnya peserta didik yang unggul dalam bidang akademik dan non akademik, Terwujudnya komunitas belajar sepanjang hayat yaitu sekolah sebagai tempat saling belajar dan berkembang bagi guru sebagai ahli, peserta didik, serta orang tua dan masyarakat, Terwujudnya pendidikan yang mengedepankan pembentukan profil pelajar Pancasila, yang memiliki enam dimensi utama yaitu: a. Beriman, bertakwa kepada Tuhan Yang Maha Esa, dan berakhlak mulia,
 
-    <!-- Start Halaman 3 -->
-    <div id="services" class="our-services section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 align-self-center  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <div class="left-image">
-                        <img src="assets/images/services-left-image.png" alt="">
+                                    b. Mandiri,
+                                    
+                                    c. Bernalar Kritis,
+                                    
+                                    d. Kreatif,
+                                    
+                                    e. Bergotong-royong, dan
+                                    
+                                    f. Berkebinekaan global. </p>
+                                <p>Misi :  1. Mewujudkan lulusan yang unggul dalam bidang akademik dan non akademik.
+
+                                    a. Menentukan kriteria ketuntasan belajar peserta didik
+                                    
+                                    b. Menentukan kriteria lulusan terutama pada ujian sekolah untuk semua mata pelajaran
+                                    
+                                    c. Mengikutsertakan peserta didik untuk kegiatan lomba minimal tingkat kecamatan hingga sampai tingkat internasional,
+                                
+                                   2. Mewujudkan pendidikan yang mengedepankan pembentukan komunitas belajar sepanjang hayat yaitu guru, peserta didik dan orang tua saling belajar sepanjang hidupnya.
+
+                                    a. Membuka ruang kelas open class untuk guru lain bisa saling melihat dan belajar proses pembelajaran di kelas.
+                                    
+                                    
+                                    b. Mengaktifkan kegiatan MGMP sekolah untuk forum diskusi dalam merencanakan pembelajaran, melaksanakan pembelajaran, dan penilaian
+                                    
+                                    c. Mengikuti pendidikan dan atau pelatihan yang relevan dengan mata pelajaran yang diampu untuk dapat meningkatkan kualitas pengetahuan, keterampilan, dan wawasan guru agar lebih profesional.
+                                    
+                                    d. Memfasilitasi kegiatan ekstrakurikuler pilihan berdasarkan minat dan potensi peserta didik dalam segala bidang, misalnya studi club seperti: club robotik, klub penelitian remaja, club kreativitas siswa, club ajang prestasi siswa, dll.
+                                    
+                                    e. Melakukan sosialisasi kepada komunitas orang tua terkait dengan pola/strategi pendampingan belajar online (belajar dari rumah) pada masa pandemi untuk putra dan putrinya.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="work_img">
+                                <figure><img src="images/work_img.jpg" alt="#" /></figure>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <div class="section-heading">
-                        <h2>Pelayanan Kita Yang <em>Selalu</em> Memuaskan &amp; <span>Teliti </span> </h2>
-                        <p>Kami Selalu Mengutamakan Proses Yang Cepat Dan Teliti, Dengan Begitu Bapak/Ibu Bisa Nyaman Tanpa Takut Untuk Ngelag Atau Kalah Dengan Koneksi Internet. Bapak/Ibu Atau Bahkan Calon Siswa Atau Putri Bisa Melihat Perkembangan Untuk Pendaftaran Dengan Graphic Dibawah ini 😊</p>
+            </div>
+            <!-- end work -->
+
+            <!-- request -->
+            <!-- <div id="contact" class="request">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="titlepage">
+                                <h2>Request <span class="white">A call Back</span></h2>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-12">
-                            <div class="first-bar progress-skill-bar">
-                                <h4>Jurusan Baku Hantam</h4>
-                                <span>84%</span>
-                                <div class="filled-bar"></div>
-                                <div class="full-bar"></div>
-                            </div>
+                        <div class="col-md-6">
+                            <form id="request" class="main_form">
+                                <div class="row">
+                                    <div class="col-md-12 ">
+                                        <input class="contactus" placeholder="Full Name" type="type" name="Full Name">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input class="contactus" placeholder="Email" type="type" name="Email">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input class="contactus" placeholder="Phone Number" type="type"
+                                            name="Phone Number">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <textarea class="textarea" placeholder="Message" type="type"
+                                            Message="Name">Message </textarea>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button class="send_btn">Send</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="first-bar progress-skill-bar">
-                                <h4>Jurusan Tata Boga</h4>
-                                <span>84%</span>
-                                <div class="filled-bar"></div>
-                                <div class="full-bar"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="second-bar progress-skill-bar">
-                                <h4>Jurusan Kecantikan</h4>
-                                <span>88%</span>
-                                <div class="filled-bar"></div>
-                                <div class="full-bar"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="third-bar progress-skill-bar">
-                                <h4>Jurusan Roblox</h4>
-                                <span>94%</span>
-                                <div class="filled-bar"></div>
-                                <div class="full-bar"></div>
-                            </div>
+                        <div class="col-md-6">
+                            <div id="map"></div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- Selesai Halaman 3 -->
+            </div> -->
+            <!-- end request -->
 
-    <!-- Start Halaman 4 -->
-    <div id="portfolio" class="our-portfolio section">
-        <div class="container">
-            <!-- Penjelasan -->
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="section-heading  wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <h2>Lihat Jurusan <em>Disini</em> &amp; Penjelasan <span>Nya</span></h2>
-                    </div>
-                </div>
-            </div>
-            <!-- Akhir Penjelasan -->
-
-            <!-- Jurusan Pertama -->
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                            <div class="hidden-content">
-                                <h4>Jurusan Baku Hantam</h4>
-                                <p>Disini Kita Akan Diajari Bela Diri Melindungi Orang Tersayang</p>
-                            </div>
-                            <div class="showed-content">
-                                <img src="assets/images/portfolio-image.png" alt="">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Jurusan Kedua -->
-                <div class="col-lg-3 col-sm-6">
-                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-                            <div class="hidden-content">
-                                <h4>Jurusan Tata Boga</h4>
-                                <p>Disini Kita Akan Diajari Bagaimana Menyenangkan Untuk Orang Kesayangan</p>
-                            </div>
-                            <div class="showed-content">
-                                <img src="assets/images/portfolio-image.png" alt="">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Jurusan Ketiga -->
-                <div class="col-lg-3 col-sm-6">
-                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                            <div class="hidden-content">
-                                <h4>Jurusan Kecantikan</h4>
-                                <p>Disini Kita Akan Diajari Tentang Good Looking</p>
-                            </div>
-                            <div class="showed-content">
-                                <img src="assets/images/portfolio-image.png" alt="">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Jurusan Keempat -->
-                <div class="col-lg-3 col-sm-6">
-                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
-                            <div class="hidden-content">
-                                <h4>Jurusan Roblox</h4>
-                                <p>Disini Kita Akan Diajari Bagaimana Bermain Roblox Dengan Benar</p>
-                            </div>
-                            <div class="showed-content">
-                                <img src="assets/images/portfolio-image.png" alt="">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Selesai Halaman 4 -->
-
-    <!-- Start Halaman 5 -->
-    <!-- <div id="blog" class="our-blog section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
-                    <div class="section-heading">
-                        <h2>Check Out What Is <em>Trending</em> In Our Latest <span>News</span></h2>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
-                    <div class="top-dec">
-                        <img src="assets/images/blog-dec.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
-                    <div class="left-image">
-                        <a href="#"><img src="assets/images/big-blog-thumb.jpg" alt="Workspace Desktop"></a>
-                        <div class="info">
-                            <div class="inner-content">
-                                <ul>
-                                    <li><i class="fa fa-calendar"></i> 24 Mar 2021</li>
-                                    <li><i class="fa fa-users"></i> TemplateMo</li>
-                                    <li><i class="fa fa-folder"></i> Branding</li>
-                                </ul>
-                                <a href="#">
-                                    <h4>SEO Agency &amp; Digital Marketing</h4>
-                                </a>
-                                <p>Lorem ipsum dolor sit amet, consectetur and sed doer ket eismod tempor incididunt ut
-                                    labore et dolore magna...</p>
-                                <div class="main-blue-button">
-                                    <a href="#">Discover More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
-                    <div class="right-list">
-                        <ul>
-                            <li>
-                                <div class="left-content align-self-center">
-                                    <span><i class="fa fa-calendar"></i> 18 Mar 2021</span>
-                                    <a href="#">
-                                        <h4>New Websites &amp; Backlinks</h4>
-                                    </a>
-                                    <p>Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...</p>
-                                </div>
-                                <div class="right-image">
-                                    <a href="#"><img src="assets/images/blog-thumb-01.jpg" alt=""></a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="left-content align-self-center">
-                                    <span><i class="fa fa-calendar"></i> 14 Mar 2021</span>
-                                    <a href="#">
-                                        <h4>SEO Analysis &amp; Content Ideas</h4>
-                                    </a>
-                                    <p>Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...</p>
-                                </div>
-                                <div class="right-image">
-                                    <a href="#"><img src="assets/images/blog-thumb-01.jpg" alt=""></a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="left-content align-self-center">
-                                    <span><i class="fa fa-calendar"></i> 06 Mar 2021</span>
-                                    <a href="#">
-                                        <h4>SEO Tips &amp; Digital Marketing</h4>
-                                    </a>
-                                    <p>Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...</p>
-                                </div>
-                                <div class="right-image">
-                                    <a href="#"><img src="assets/images/blog-thumb-01.jpg" alt=""></a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Selesai halaman 5 -->
-
-    <!-- Start Halaman 6 -->
-    <div id="contact" class="contact-us section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
-                    <div class="section-heading">
-                        <h2>Feel Free To Send Us a Message About Your Website Needs</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doer ket eismod tempor
-                            incididunt ut labore et dolores</p>
-                        <div class="phone-info">
-                            <h4>For any enquiry, Call Us: <span><i class="fa fa-phone"></i> <a
-                                        href="#">010-020-0340</a></span></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
-                    <form id="contact" action="" method="post">
+            <!--  footer -->
+            <footer>
+                <div class="footer">
+                    <div class="container">
                         <div class="row">
-                            <div class="col-lg-6">
-                                <fieldset>
-                                    <input type="name" name="name" id="name" placeholder="Name" autocomplete="on"
-                                        required>
-                                </fieldset>
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                <div class="row">
+                                    <div class="col-md-8 col-sm-6">
+                                        <div class="address">
+                                            <h3>Address </h3>
+                                        </div>
+                                        <ul class="location_icon">
+                                            <li>Jl.Siwalanpanji, Kec. Buduran Sidoarjo, Indonesia  +6231-8962851</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="address">
+                                            <h3>Links</h3>
+                                            <ul class="Menu_footer">
+                                                <li class="active"> <a href="#">Home</a> </li>
+                                                <li><a href="#about">About </a> </li>
+                                                <li><a href="#work">Work</a> </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-lg-6">
-                                <fieldset>
-                                    <input type="surname" name="surname" id="surname" placeholder="Surname"
-                                        autocomplete="on" required>
-                                </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                                <fieldset>
-                                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*"
-                                        placeholder="Your Email" required="">
-                                </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                                <fieldset>
-                                    <textarea name="message" type="text" class="form-control" id="message"
-                                        placeholder="Message" required=""></textarea>
-                                </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                                <fieldset>
-                                    <button type="submit" id="form-submit" class="main-button ">Send Message</button>
-                                </fieldset>
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-6">
+                                        <div class="address">
+                                            <h3>Follow Us</h3>
+                                        </div>
+                                        <ul class="social_icon">
+                                            <li><a href="#">Facebook <i class="fa fa-facebook"
+                                                        aria-hidden="true"></i></a></li>
+                                            <li><a href="#"> Twitter<i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            </li>
+                                            <li><a href="#"> Linkedin<i class="fa fa-linkedin-square"
+                                                        aria-hidden="true"></i></a></li>
+                                            <li><a href="#"> Youtube<i class="fa fa-youtube-play"
+                                                        aria-hidden="true"></i></a></li>
+                                            <li><a href="#"> Instagram<i class="fa fa-instagram"
+                                                        aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- <div class="col-md-7 col-sm-6">
+                                        <div class="address">
+                                            <h3>Newsletter </h3>
+                                        </div>
+                                        <form class="bottom_form">
+                                            <input class="enter" placeholder="Enter Your Email" type="text"
+                                                name="Enter Your Email">
+                                            <button class="sub_btn">subscribe</button>
+                                        </form>
+                                    </div> -->
+                                </div>
                             </div>
                         </div>
-                        <div class="contact-dec">
-                            <img src="assets/images/contact-decoration.png" alt="">
-                        </div>
-                    </form>
+                    </div>
                 </div>
-            </div>
+            </footer>
+            <!-- end footer -->
+
         </div>
-    </div>
-    <!-- Selesai Halaman 6 -->
 
-    <!-- footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
-                    <p>© Copyright 2021 Space Dynamic Co. All Rights Reserved.
+        <div class="overlay"></div>
+        <!-- Javascript files-->
+        <script src="{{asset ('assetz/js/jquery.min.js')}}"></script>
+        <script src="{{asset ('assetz/js/popper.min.js')}}"></script>
+        <script src="{{asset ('assetz/js/bootstrap.bundle.min.js')}}"></script>
+        <script src="{{asset ('assetz/js/jquery-3.0.0.min.js')}}"></script>
+        <!-- sidebar -->
+        <script src="{{asset ('assetz/js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+        <script src="{{asset ('assetz/js/custom.js')}}"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
 
-                        <br>Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- footer -->
+                $('#dismiss, .overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').removeClass('active');
+                });
 
-    <!-- Scripts -->
-    <script src="{{asset ('vendor/jquery/jquery.min.js')}}"></script>
-    <script src="{{asset ('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset ('assets/js/owl-carousel.js')}}"></script>
-    <script src="{{asset ('assets/js/animation.js')}}"></script>
-    <script src="{{asset ('assets/js/imagesloaded.js')}}"></script>
-    <script src="{{asset ('assets/js/templatemo-custom.js')}}"></script>
-    <!-- End Script -->
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').addClass('active');
+                    $('.overlay').addClass('active');
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+            });
 
+        </script>
+        <script>
+            $(document).ready(function () {
+                $(".fancybox").fancybox({
+                    openEffect: "none",
+                    closeEffect: "none"
+                });
+
+                $(".zoom").hover(function () {
+
+                    $(this).addClass('transition');
+                }, function () {
+
+                    $(this).removeClass('transition');
+                });
+            });
+
+        </script>
+        <script>
+            // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+            // Australia.
+            function initMap() {
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 11,
+                    center: {
+                        lat: 40.645037,
+                        lng: -73.880224
+                    },
+                });
+
+                var image = 'images/maps-and-flags.png';
+                var beachMarker = new google.maps.Marker({
+                    position: {
+                        lat: 40.645037,
+                        lng: -73.880224
+                    },
+                    map: map,
+                    icon: image
+                });
+            }
+
+        </script>
+        <!-- google map js -->
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
+        </script>
+        <!-- end google map js -->
 </body>
 
 </html>
