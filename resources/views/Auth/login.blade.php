@@ -9,7 +9,7 @@
     <!-- General CSS Files -->
     <link rel="stylesheet" href="{{ asset('assetz/modules/bootstrap.min.css')}}">
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="{{ asset('assetz/modules/fontawesome/css/all.min.css')}}">
+    {{-- <link rel="stylesheet" href="{{ asset('assetz/modules/fontawesome/css/all.min.css')}}"> --}}
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="{{ asset('assetz/css/style.css')}}">
@@ -65,7 +65,7 @@
                                 </form>
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col"><a href="/admin" class="btn w-100">
+                                        <div class="col"><a href="#" class="btn w-100">
                                                 <!-- Download SVG icon from http://tabler-icons.io/i/brand-github -->
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon text-github"
                                                     width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
@@ -75,7 +75,7 @@
                                                     <path
                                                         d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
                                                 </svg>
-                                                Login Admin
+                                               
                                             </a></div>
                                     </div>
                                 </div>
@@ -92,13 +92,13 @@
     </div>
 
     <!-- General JS Scripts -->
-    <script src="{{asset ('assetz/modules/jquery.min.js')}}"></script>
-    <script src="{{asset ('assetz/modules/popper.js')}}"></script>
-    <script src="{{asset ('assetz/modules/tooltip.js')}}"></script>
-    <script src="{{asset ('assetz/modules/bootstrap/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset ('assetz/modules/nicescroll/jquery.nicescroll.min.js')}}"></script>
-    <script src="{{asset ('assetz/modules/moment.min.js')}}"></script>
-    <script src="{{asset ('assetz/js/stisla.js')}}"></script>
+    <script src="{{ asset('assetz/modules/jquery.min.js')}}"></script>
+    <script src="{{ asset('assetz/modules/popper.js') }}"></script>
+    <script src="{{ asset('assetz/modules/tooltip.js') }}"></script>
+    <script src="{{ asset('assetz/modules/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assetz/modules/jquery.nicescroll.min.js') }}"></script>
+    <script src="{{ asset('assetz/modules/moment.min.js') }}"></script>
+    <script src="{{ asset('assetz/js/stisla.js') }}"></script>
 
     <!-- JS Libraies -->
 
