@@ -26,13 +26,13 @@ class UserTableSeeder extends Seeder
             'status' => 'active'
         ]);
 
-        DB::table('users')->insert([
-            'role_id' => 2,
-            'name' => 'iruhamukun',
-            'email' => 'ilham@gmail.com',
-            'password' => bcrypt('hooh'),
-            'remember_token' => Str::random(20),
-            'status' => 'inactive'
-        ]);
+        // DB::table('users')->insert([
+        //     'role_id' => 2,
+        //     'name' => 'iruhamukun',
+        //     'email' => 'ilham@gmail.com',
+        //     'password' => bcrypt('hooh'),
+        //     'remember_token' => Str::random(20),
+        //     'status' => 'inactive'
+        // ]);
     }
 }

@@ -2431,7 +2431,9 @@ body, html {
 }
 
 body {
-  background-color: #fff;
+  background: linear-gradient(-45deg, #ffffff,);
+  /* background-size: 400% 400%;
+  animation: gradient 10s ease infinite; */
   font-size: 14px;
   font-weight: 400;
   font-family: "Nunito", "Segoe UI", arial;

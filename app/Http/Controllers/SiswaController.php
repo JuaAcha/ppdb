@@ -188,6 +188,9 @@ class SiswaController extends Controller
         $siswa = Siswa::find($id);
         $siswa->delete();
 
+        $user = User::find($id+1);
+        $user->delete();
+
         return redirect('siswa');
     }
 }
