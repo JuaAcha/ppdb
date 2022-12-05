@@ -81,7 +81,7 @@
                             <li><a href="/register">Register</a></li>
                             <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
                             <li><button type="button" id="sidebarCollapse">
-                                    <img src="images/menu_icon.png" alt="#" />
+                                    <img src="{{asset ('assetz/images/menu_icon.png') }}" alt="#" />
                                 </button>
                             </li>
                         </ul>
@@ -115,7 +115,7 @@
                                     </div>
                                     <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
                                         <div class="images_box">
-                                            <figure><img src="images/img2.png"></figure>
+                                            <figure><img src="{{asset ('assetz/images/img2.png') }}"></figure>
                                         </div>
                                     </div>
                                 </div>
@@ -134,7 +134,7 @@
                                     </div>
                                     <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
                                         <div class="images_box">
-                                            <figure><img src="images/img2.png"></figure>
+                                            <figure><img src="{{asset ('assetz/images/img2.png') }}"></figure>
                                         </div>
                                     </div>
                                 </div>
@@ -153,7 +153,7 @@
                                     </div>
                                     <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
                                         <div class="images_box">
-                                            <figure><img src="images/img2.png"></figure>
+                                            <figure><img src="{{asset ('assetz/images/img2.png') }}"></figure>
                                         </div>
                                     </div>
                                 </div>
@@ -176,7 +176,7 @@
                     <div class="row d_flex">
                         <div class="col-md-5">
                             <div class="about_img">
-                                <figure><img src="images/depan.jpg" alt="#" /></figure>
+                                <figure><img src="{{asset ('assetz/images/depan.jpg') }}" alt="#" /></figure>
                             </div>
                         </div>
                         <div class="col-md-7">
@@ -269,7 +269,7 @@
                         </div>
                         <div class="col-md-5">
                             <div class="work_img">
-                                <figure><img src="images/work_img.jpg" alt="#" /></figure>
+                                <figure><img src="{{asset ('assetz/images/work_img.jpg') }}" alt="#" /></figure>
                             </div>
                         </div>
                     </div>
