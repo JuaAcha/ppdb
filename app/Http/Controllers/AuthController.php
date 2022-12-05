@@ -28,12 +28,12 @@ class AuthController extends Controller
             'password.required' => 'Password Wajib Di Isi',
         ]);
 
-        $infologin =[
-            'email' => $request->email,
-            'password' => $request->password,
-        ];
+        // $infologin =[
+        //     'email' => $request->email,
+        //     'password' => $request->password,
+        // ];
 
-        if(Auth::attempt($infologin)){
+        if(Auth::attempt($request->only('email', 'password'))){
             return redirect('/dashboard');
         }
         return redirect('/login');

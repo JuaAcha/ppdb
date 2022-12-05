@@ -33,7 +33,7 @@ Route::get('/logout', [AuthController::class, '/welcome'])->name('/welcome');
 Route::get('/register', [AuthController::class, 'register'])->name('register');
 Route::post('/simpanRegister', [AuthController::class, 'simpanRegister'])->name('simpanRegister');
 
-// Route::group(['middleware' => ['auth', 'checkrole:Admin']], function(){
+Route::group(['middleware' => ['auth', 'CheckRole:Admin']], function(){
 // Route Siswa
 Route::get('/siswa/data', [SiswaController::class, 'data'])->name('siswa.data');
 Route::resource('/siswa', SiswaController::class);
@@ -42,9 +42,9 @@ Route::resource('/siswa', SiswaController::class);
 Route::get('/jurusan/data', [JurusanController::class, 'data'])->name('jurusan.data');
 Route::resource('/jurusan', JurusanController::class);
 
-// });
+});
 
-// Route::group(['middleware' => ['auth', 'checkrole:Admin,siswa']], function(){
+Route::group(['middleware' => ['auth', 'CheckRole:Admin,siswa']], function(){
 // Route Dashboard
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard'); 
-// });
+});
