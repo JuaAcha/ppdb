@@ -339,8 +339,8 @@
                                             <h3>Links</h3>
                                             <ul class="Menu_footer">
                                                 <li class="active"> <a href="#">Home</a> </li>
-                                                <li><a href="#about">About </a> </li>
-                                                <li><a href="#work">Work</a> </li>
+                                                <li><a href="#about">Informasi Sekolah </a> </li>
+                                                <li><a href="#work">Visi Misi</a> </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -353,15 +353,15 @@
                                             <h3>Follow Us</h3>
                                         </div>
                                         <ul class="social_icon">
-                                            <li><a href="#">Facebook <i class="fa fa-facebook"
+                                            <li><a href="https://id-id.facebook.com/smkantartika1/">Facebook <i class="fa fa-facebook"
                                                         aria-hidden="true"></i></a></li>
-                                            <li><a href="#"> Twitter<i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            <li><a href="https://twitter.com/smkantartika1?lang=id"> Twitter<i class="fa fa-twitter" aria-hidden="true"></i></a>
                                             </li>
-                                            <li><a href="#"> Linkedin<i class="fa fa-linkedin-square"
+                                            <li><a href="https://id.linkedin.com/in/smk-antartika-1-sidoarjo-4694161b8"> Linkedin<i class="fa fa-linkedin-square"
                                                         aria-hidden="true"></i></a></li>
-                                            <li><a href="#"> Youtube<i class="fa fa-youtube-play"
+                                            <li><a href="https://www.youtube.com/channel/UCnkz0kc33AJLAExqDFMA2IQ"> Youtube<i class="fa fa-youtube-play"
                                                         aria-hidden="true"></i></a></li>
-                                            <li><a href="#"> Instagram<i class="fa fa-instagram"
+                                            <li><a href="https://www.instagram.com/smkantartika1sda/?hl=id"> Instagram<i class="fa fa-instagram"
                                                         aria-hidden="true"></i></a></li>
                                         </ul>
                                     </div>

@@ -97,10 +97,8 @@
                         <div class="mt-5 text-muted text-center">
                             Don't have an account? <a href="{{route('register')}}">Daftar Disini</a>
                         </div>
-                        <div class="simple-footer">
-                            Copyright &copy; Anandito 2022
-                        </div>
                     </div>
+                    @include('template.footer')
                 </div>
             </div>
         </section>

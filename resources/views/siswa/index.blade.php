@@ -114,9 +114,9 @@
             $('#modalForm [name=_method]').val('post');
         }
 
-        function pdf(url){
-        $('.form-siswa').attr('action', url).attr('target', '_blank').submit();
-        }
+        // function pdf(url){
+        // $('.form-siswa').attr('action', url).attr('target', '_blank').submit();
+        // }
 
         function editData(url){
             $('#modalForm').modal('show');

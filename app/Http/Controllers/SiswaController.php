@@ -7,7 +7,6 @@ use App\Models\Jurusan;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Validator;
-use PDF;
 use Str;
 class SiswaController extends Controller
 {
@@ -36,13 +35,11 @@ class SiswaController extends Controller
             })
             ->addColumn('aksi', function($siswa){
                 return '
-
                 <div class="btn-group">
                     <button onclick="editData(`' .route('siswa.update', $siswa->id). '`)" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i></button>
                     <button onclick="deleteData(`' .route('siswa.destroy', $siswa->id). '`)" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
                     <a href="' .route('siswa.pdf', $siswa->id). '" target="_blank" class="btn btn-success btn-sm"><i class="fa fa-print"></i></a>
                 </div>
-
                 ';
             })
             ->rawColumns(['aksi', 'siswa'])
@@ -76,6 +73,7 @@ class SiswaController extends Controller
         $user->status = 'inactive';
         $user->save();
 
+        $request->request->add(['user_id' => $user->id]);
         $validator = Validator::make($request->all(), [
             'nama' => 'required',
             'jurusan_id' => 'required',
@@ -91,22 +89,12 @@ class SiswaController extends Controller
         ]);
 
         //membuat table siswa
-        $request->request->add(['user_id' => $user->id]);
-        $siswa = Siswa::create([
-            'nama' => $request->nama,
-            'jurusan_id' => $request->jurusan_id,
-            'jenis_kelamin' => $request->jenis_kelamin,
-            'agama' => $request->agama,
-            'email' => $request->email,
-            'telepon' => $request->telepon,
-            'nisn' => $request->nisn,
-            'tempat_lahir' => $request->tempat_lahir,
-            'tanggal_lahir' => $request->tanggal_lahir,
-            'alamat' => $request->alamat,
-            'asal_sekolah' => $request->asal_sekolah,
-        ]);
+        $siswa = Siswa::create(
+            $request->all());
 
-        $request->request->add(['user_id' => $user->id]);
+        // $request->request->add(['user_id' => $user->id]);
+
+        // dd($request);
 
         if($validator->fails()){
             return response()->json($validator->errors(), 422);
@@ -186,9 +174,8 @@ class SiswaController extends Controller
     public function destroy($id)
     {
         $siswa = Siswa::find($id);
-        $siswa->delete();
-
         $user = User::find($id+1);
+        $siswa->delete();
         $user->delete();
 
         return redirect('siswa');
