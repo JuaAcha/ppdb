@@ -21,7 +21,7 @@ class JurusanController extends Controller
 
     public function data()
     {
-        $jurusan = Jurusan::orderBy('id', 'desc')->get();
+        $jurusan = Jurusan::orderBy('id', 'asc')->get();
 
         return datatables()
             ->of($jurusan)

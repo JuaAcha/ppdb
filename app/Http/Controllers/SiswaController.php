@@ -25,7 +25,7 @@ class SiswaController extends Controller
 
     public function data()
     {
-        $siswa = siswa::orderBy('id', 'desc')->get();
+        $siswa = siswa::orderBy('id', 'asc')->get();
 
         return datatables()
             ->of($siswa)
@@ -38,7 +38,6 @@ class SiswaController extends Controller
                 <div class="btn-group">
                     <button onclick="editData(`' .route('siswa.update', $siswa->id). '`)" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i></button>
                     <button onclick="deleteData(`' .route('siswa.destroy', $siswa->id). '`)" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
-                    <a href="' .route('siswa.pdf', $siswa->id). '" target="_blank" class="btn btn-success btn-sm"><i class="fa fa-print"></i></a>
                 </div>
                 ';
             })
