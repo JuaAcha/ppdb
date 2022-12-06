@@ -17,7 +17,7 @@
                 <div class="col-lg-4">
                     <div class="">
                         <div class="card-body text-center">
-                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
+                            <img src="https://avatars.githubusercontent.com/u/109930502?v=4C"
                                 alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
                             <h5 class="my-3">{{Auth()->user()->name}}</h5>
                             <p class="text-muted mb-1"></p>
